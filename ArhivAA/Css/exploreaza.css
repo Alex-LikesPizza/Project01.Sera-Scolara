@@ -1,0 +1,26 @@
+.product-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+
+}
+.product-box{
+    display: flex;
+    width: 1fr;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 2px rgb(177, 177, 177);
+}
+.product-img{
+    width:200px;
+    height: 200px;
+    display:inline-block;
+    margin: 0 10px 0 0;
+}
+.product-stock-icon{
+    width: 16px;
+    height: 16px;
+}
