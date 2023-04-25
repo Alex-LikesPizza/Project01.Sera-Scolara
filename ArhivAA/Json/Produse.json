@@ -6,21 +6,24 @@
                 "name":"Petunii Curgătoare",
                 "description":"TBA",
                 "price": 69420,
-                "image":"../Imagini/nume.png"
+                "image":"Imagini\\products\\flori\\crizanteme.png",
+                "inStock": false
             },
             {
                 "id":2,
                 "name":"Crizanteme",
                 "description":"TBA",
                 "price": 69420,
-                "image":"../Imagini/nume.png"
+                "image":"Imagini\\products\\flori\\crizanteme.png",
+                "inStock": false
             },
             {
                 "id":3,
                 "name":"Mușcate",
                 "description":"TBA",
                 "price": 69420,
-                "image":"../Imagini/nume.png"
+                "image":"Imagini\\products\\flori\\crizanteme.png",
+                "inStock": false
             }
         ]
 }
