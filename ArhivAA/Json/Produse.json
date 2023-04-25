@@ -1,0 +1,26 @@
+{
+    "products": 
+        [
+            {
+                "id":1,
+                "name":"Petunii Curgătoare",
+                "description":"TBA",
+                "price": 69420,
+                "image":"../Imagini/nume.png"
+            },
+            {
+                "id":2,
+                "name":"Crizanteme",
+                "description":"TBA",
+                "price": 69420,
+                "image":"../Imagini/nume.png"
+            },
+            {
+                "id":3,
+                "name":"Mușcate",
+                "description":"TBA",
+                "price": 69420,
+                "image":"../Imagini/nume.png"
+            }
+        ]
+}
