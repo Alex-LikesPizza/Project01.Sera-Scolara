@@ -9,9 +9,6 @@
     font-family: 'Alkatra', cursive, sans-serif, serif;
 }
 
-
-
-
 body, html{
     min-width: 100vw;
     min-height: 100vh;
@@ -19,9 +16,6 @@ body, html{
     background-color: rgb(233, 230, 230);
     overflow-x: hidden;
 }
-
-
-
 
 
 #fixed_nav{
@@ -80,11 +74,6 @@ body, html{
 
 
 
-
-
-
-
-
 header{
     height: 120px;
     width: 100%;
@@ -130,10 +119,6 @@ header{
 }
 
 
-
-
-
-
 .list{
     display: flex;
     flex-flow: row;
@@ -169,9 +154,6 @@ header{
     cursor: pointer;
 }
 
-
-
-
 .header_link_text:hover {
     color: #272937;
 }
@@ -206,28 +188,12 @@ header{
     background-color: #808080;
 }
 
-
-
-
-
-
-
-
-
-
 .pre-wrapper{
     padding-bottom: 130px;
     width: 1fr;
     justify-self: center;
     margin: 0;
 }
-
-
-
-
-
-
-
 
 footer{
     height: 100px;
