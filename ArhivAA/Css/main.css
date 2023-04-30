@@ -287,8 +287,7 @@ footer{
         order: -1;
     }
     .header_logo{
-        height: 300px;
-        margin-top: -120px;
+        display: none;
     }
     .footer_media{
         width: 50%;
