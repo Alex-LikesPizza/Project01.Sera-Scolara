@@ -10,16 +10,19 @@
     background-color: #CFC8C8ff;
     border-radius: 50px;
 }
+
 .pre-wrapper{
     position: relative;
     height: 50rem;
 }
+
 .flower1{
     position: absolute;
     left: -3rem;
     top: 0;
     height: 42rem;
 }
+
 .flower2{
     position: absolute;
     right: -3rem;
@@ -34,7 +37,6 @@
     position: absolute;
     bottom: 9%;
     left: 36%;
-
 }
 
 .spon2{
