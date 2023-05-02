@@ -28,6 +28,7 @@
 </head>
 <body>
 
+
     <div id="fixed_nav" class="fixed_nav">
             <div id="blackout"></div>
             <div class="slider">
@@ -86,24 +87,27 @@
    
     <div class="pre-wrapper">
         <div class="cart-container">
-            <h2 class="cart-title title">Coș de Produse</h2>
+            <h1 class="cart-title title">Coș de Produse</h1>
+            <div id="cart-empty">
+                Coșul este gol. Vezi produsele mai jos.
+            </div>
 
             <div>
                 <div class="cart-products">
 
-                    <div class="cart-box">
+                    <div class="cart-box" id="cart-box1">
                         <div class="cart-start">
                             <img class="cart-img" src="..\Imagini\products\flori\petunii.jpg" alt="FLOWER">
                             <h4 class="cart-name">Petunii Curgătoare</h4>
                         </div>
 
                         <div class="cart-end">
-                            <p class="cart-price">Preț: <span id="cart-price">80</span></p>
-                            <svg class="cart-increment" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                            <p class="cart-price">Preț: <span id="cart-price1">80</span> lei</p>
+                            <svg class="cart-increment" onclick="increment(1, 80)" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                             </svg>
-                            <p class="cart-count">1</p>
-                            <svg class="cart-increment" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                            <p class="cart-count" id="cart-count1">1</p>
+                            <svg class="cart-increment" onclick="increment(1, -80)" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
                                 <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                             </svg>
                         </div>
@@ -112,6 +116,44 @@
 
                 </div>
             </div>
+
+            <div class="cart-box" id="cart-box2">
+                <div class="cart-start">
+                    <img class="cart-img" src="..\Imagini\products\flori\crizanteme.jpg" alt="FLOWER">
+                    <h4 class="cart-name">Crizanteme</h4>
+                </div>
+
+                <div class="cart-end">
+                    <p class="cart-price">Preț: <span id="cart-price2">100</span> lei</p>
+                    <svg class="cart-increment" onclick="increment(2, 100)" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                    <p class="cart-count" id="cart-count2">1</p>
+                    <svg class="cart-increment" onclick="increment(2, -100)" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="cart-box" id="cart-box3">
+                <div class="cart-start">
+                    <img class="cart-img" src="..\Imagini\products\flori\muscate.jpg" alt="FLOWER">
+                    <h4 class="cart-name">Mușcate</h4>
+                </div>
+
+                <div class="cart-end">
+                    <p class="cart-price">Preț: <span id="cart-price3">80</span> lei</p>
+                    <svg class="cart-increment" onclick="increment(3, 80)" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                    <p class="cart-count" id="cart-count3">1</p>
+                    <svg class="cart-increment" onclick="increment(3, -80)" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <button id="cart-buy" onclick="buy()">Cumpără</button>
+
         </div>
         
 
@@ -204,6 +246,10 @@
 
         </div>
     </footer>
+
+
+    <p id="popup"></p>
+
     <script src="../Js/main.js"></script>
     <script src="../Js/exploreaza.js"></script>
 </body>
