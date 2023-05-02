@@ -8,3 +8,20 @@
     text-align: center;
     border-radius: 25px;
 }
+.pre-wrapper{
+    position: relative;
+    height: 50rem;
+}
+.flower1{
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    height: 40rem;
+}
+.flower2{
+    position: absolute;
+    right: -3rem;
+    top: 0;
+    height: 40rem;
+    transform: scale(-1, 1);
+}
