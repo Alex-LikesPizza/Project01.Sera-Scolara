@@ -228,7 +228,10 @@ footer{
     text-decoration: none;
 }
 .footer_icon:hover{
-    color:#8f4396
+    color: orangered;
+}
+.footer_icon:active{
+    color: rgb(203, 54, 0);
 }
 
 
@@ -265,3 +268,5 @@ footer{
         width: 100%;
     }
 }
+
+

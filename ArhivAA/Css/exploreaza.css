@@ -71,6 +71,7 @@
     transition: 0.2s;
     cursor: pointer;
     color: white;
+    user-select:none;
 }
 .product-add:hover{
     background-color: rgb(255, 119, 0);
@@ -121,7 +122,7 @@
 
 
 .cart-box{
-    display: flex;
+    display: none;
     justify-content: space-between;
     background-color: rgb(248, 248, 248);
     margin: 0 2rem;
@@ -166,4 +167,61 @@
     height: 1.5rem;
     border-radius: 50%;
     cursor: pointer;
+    user-select:none;
 }
+.cart-increment:active{
+    background-color: rgb(203, 54, 0);
+}
+
+
+#cart-empty{
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(97, 97, 97);
+    border: 1px solid rgb(170, 170, 170);
+    padding: 0.6rem 1rem;
+    background-color: rgb(239, 239, 239);
+}
+#cart-buy{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 0.6rem;
+    transition: 0.2s;
+}
+#cart-buy:hover{
+    translate: 0 -0.4rem;
+}
+#cart-buy:active{
+    background-color: rgb(203, 54, 0);
+}
+
+#popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    animation: slideIn 0.5s ease-in-out forwards;
+    opacity: 0.8;
+  }
+  
+#popup.slide-out {
+    animation-name: slideOut;
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+  
+  @keyframes slideOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+  }
