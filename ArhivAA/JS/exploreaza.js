@@ -1,5 +1,9 @@
 let orderList = 0;
 let orders = 3;
+let list = [];
+let totalprice;
+
+
 
 function increment(id, amount){
     let count = document.getElementById("cart-count" + id);
@@ -20,7 +24,33 @@ function addItem(id){
     document.getElementById("cart-box" + id).style.display = "flex";
     document.getElementById("cart-empty").style.display = "none";
     orderList++;
+    list.push(id);
 }
+
+function openCart(){
+    document.getElementById("pre-checkout-container").style.display = "block";
+    totalprice = 0;
+    for(let i = 1; i <= orders; i++){
+      if(!list.includes(i)){
+        document.getElementById("item" + i).style.display = "none";
+      }
+      else{
+        const elem = document.getElementById("item" + i);
+        elem.style.display = "flex";
+        let price = +document.getElementById("cart-price" + i).innerHTML;
+        document.getElementById("checkout-count" + i).innerHTML = document.getElementById("cart-count" + i).innerHTML;
+        document.getElementById("checkout-price" + i).innerHTML = price;
+        totalprice += price;
+      }
+    document.getElementById("total-price").innerHTML = totalprice;
+    }
+
+
+}
+function closeCart(){
+    document.getElementById("pre-checkout-container").style.display = "none";
+}
+
 
 //buy
 const popup = document.getElementById('popup');
@@ -41,6 +71,12 @@ function buy(){
     }
     showPopup();
   }
+
+
+function confirmPurchase(){
+    buy();
+    closeCart();
+}
 
 
 function showPopup() {
